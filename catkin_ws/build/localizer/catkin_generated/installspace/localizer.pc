@@ -1,0 +1,8 @@
+prefix=/home/marvin/University/ESL/catkin_ws/install
+
+Name: localizer
+Description: Description of localizer
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

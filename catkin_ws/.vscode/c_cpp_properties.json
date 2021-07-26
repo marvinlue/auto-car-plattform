@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/marvin/University/ESL/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/marvin/University/ESL/catkin_ws/src/ackermann_pub/include/**",
+        "/home/marvin/University/ESL/catkin_ws/src/aruco_ros/aruco/include/**",
+        "/home/marvin/University/ESL/catkin_ws/src/aruco_ros/aruco_ros/include/**",
+        "/home/marvin/University/ESL/catkin_ws/src/localizer/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}
