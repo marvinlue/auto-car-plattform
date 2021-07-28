@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(localizer_LIBRARIES ${localizer_LIBRARIES})
 
   _list_append_unique(localizer_LIBRARY_DIRS ${${localizer_dep}_LIBRARY_DIRS})
-  list(APPEND localizer_EXPORTED_TARGETS ${${localizer_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(localizer_EXPORTED_TARGETS ${${localizer_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "")

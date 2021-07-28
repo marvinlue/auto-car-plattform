@@ -17,7 +17,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/home/marvin/University/ESL/catkin_ws/devel/include"
   "/home/marvin/University/ESL/catkin_ws/src/aruco_ros/aruco/include"
+  "/home/marvin/University/ESL/catkin_ws/src/aruco_ros/aruco_ros/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/opencv4"

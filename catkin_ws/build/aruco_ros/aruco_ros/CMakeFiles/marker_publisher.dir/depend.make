@@ -195,6 +195,8 @@ aruco_ros/aruco_ros/CMakeFiles/marker_publisher.dir/src/aruco_ros_utils.cpp.o: /
 aruco_ros/aruco_ros/CMakeFiles/marker_publisher.dir/src/aruco_ros_utils.cpp.o: /usr/include/opencv4/opencv2/viz/vizcore.hpp
 aruco_ros/aruco_ros/CMakeFiles/marker_publisher.dir/src/aruco_ros_utils.cpp.o: /usr/include/opencv4/opencv2/viz/widgets.hpp
 
+aruco_ros/aruco_ros/CMakeFiles/marker_publisher.dir/src/marker_publish.cpp.o: /home/marvin/University/ESL/catkin_ws/devel/include/aruco_msgs/Marker.h
+aruco_ros/aruco_ros/CMakeFiles/marker_publisher.dir/src/marker_publish.cpp.o: /home/marvin/University/ESL/catkin_ws/devel/include/aruco_msgs/MarkerArray.h
 aruco_ros/aruco_ros/CMakeFiles/marker_publisher.dir/src/marker_publish.cpp.o: /home/marvin/University/ESL/catkin_ws/src/aruco_ros/aruco/include/aruco/aruco.h
 aruco_ros/aruco_ros/CMakeFiles/marker_publisher.dir/src/marker_publish.cpp.o: /home/marvin/University/ESL/catkin_ws/src/aruco_ros/aruco/include/aruco/aruco_export.h
 aruco_ros/aruco_ros/CMakeFiles/marker_publisher.dir/src/marker_publish.cpp.o: /home/marvin/University/ESL/catkin_ws/src/aruco_ros/aruco/include/aruco/cameraparameters.h
@@ -212,6 +214,7 @@ aruco_ros/aruco_ros/CMakeFiles/marker_publisher.dir/src/marker_publish.cpp.o: /o
 aruco_ros/aruco_ros/CMakeFiles/marker_publisher.dir/src/marker_publish.cpp.o: /opt/ros/noetic/include/geometry_msgs/PointStamped.h
 aruco_ros/aruco_ros/CMakeFiles/marker_publisher.dir/src/marker_publish.cpp.o: /opt/ros/noetic/include/geometry_msgs/Pose.h
 aruco_ros/aruco_ros/CMakeFiles/marker_publisher.dir/src/marker_publish.cpp.o: /opt/ros/noetic/include/geometry_msgs/PoseStamped.h
+aruco_ros/aruco_ros/CMakeFiles/marker_publisher.dir/src/marker_publish.cpp.o: /opt/ros/noetic/include/geometry_msgs/PoseWithCovariance.h
 aruco_ros/aruco_ros/CMakeFiles/marker_publisher.dir/src/marker_publish.cpp.o: /opt/ros/noetic/include/geometry_msgs/Quaternion.h
 aruco_ros/aruco_ros/CMakeFiles/marker_publisher.dir/src/marker_publish.cpp.o: /opt/ros/noetic/include/geometry_msgs/QuaternionStamped.h
 aruco_ros/aruco_ros/CMakeFiles/marker_publisher.dir/src/marker_publish.cpp.o: /opt/ros/noetic/include/geometry_msgs/Transform.h

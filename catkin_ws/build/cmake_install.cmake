@@ -131,12 +131,8 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/marvin/University/ESL/catkin_ws/build/gtest/cmake_install.cmake")
-  include("/home/marvin/University/ESL/catkin_ws/build/aruco_ros/aruco_msgs/cmake_install.cmake")
   include("/home/marvin/University/ESL/catkin_ws/build/ackermann_pub/cmake_install.cmake")
   include("/home/marvin/University/ESL/catkin_ws/build/ackermann_control/cmake_install.cmake")
-  include("/home/marvin/University/ESL/catkin_ws/build/localizer/cmake_install.cmake")
-  include("/home/marvin/University/ESL/catkin_ws/build/aruco_ros/aruco/cmake_install.cmake")
-  include("/home/marvin/University/ESL/catkin_ws/build/aruco_ros/aruco_ros/cmake_install.cmake")
 
 endif()
 

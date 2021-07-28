@@ -196,6 +196,8 @@ aruco_ros/aruco_ros/CMakeFiles/marker_publisher.dir/src/aruco_ros_utils.cpp.o
  /usr/include/opencv4/opencv2/viz/vizcore.hpp
  /usr/include/opencv4/opencv2/viz/widgets.hpp
 aruco_ros/aruco_ros/CMakeFiles/marker_publisher.dir/src/marker_publish.cpp.o
+ /home/marvin/University/ESL/catkin_ws/devel/include/aruco_msgs/Marker.h
+ /home/marvin/University/ESL/catkin_ws/devel/include/aruco_msgs/MarkerArray.h
  /home/marvin/University/ESL/catkin_ws/src/aruco_ros/aruco/include/aruco/aruco.h
  /home/marvin/University/ESL/catkin_ws/src/aruco_ros/aruco/include/aruco/aruco_export.h
  /home/marvin/University/ESL/catkin_ws/src/aruco_ros/aruco/include/aruco/cameraparameters.h
@@ -213,6 +215,7 @@ aruco_ros/aruco_ros/CMakeFiles/marker_publisher.dir/src/marker_publish.cpp.o
  /opt/ros/noetic/include/geometry_msgs/PointStamped.h
  /opt/ros/noetic/include/geometry_msgs/Pose.h
  /opt/ros/noetic/include/geometry_msgs/PoseStamped.h
+ /opt/ros/noetic/include/geometry_msgs/PoseWithCovariance.h
  /opt/ros/noetic/include/geometry_msgs/Quaternion.h
  /opt/ros/noetic/include/geometry_msgs/QuaternionStamped.h
  /opt/ros/noetic/include/geometry_msgs/Transform.h

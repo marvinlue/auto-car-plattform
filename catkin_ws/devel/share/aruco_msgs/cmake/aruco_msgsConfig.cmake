@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(aruco_msgs_LIBRARIES ${aruco_msgs_LIBRARIES})
 
   _list_append_unique(aruco_msgs_LIBRARY_DIRS ${${aruco_msgs_dep}_LIBRARY_DIRS})
-  list(APPEND aruco_msgs_EXPORTED_TARGETS ${${aruco_msgs_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(aruco_msgs_EXPORTED_TARGETS ${${aruco_msgs_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "aruco_msgs-msg-extras.cmake")

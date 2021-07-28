@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(aruco_LIBRARIES ${aruco_LIBRARIES})
 
   _list_append_unique(aruco_LIBRARY_DIRS ${${aruco_dep}_LIBRARY_DIRS})
-  list(APPEND aruco_EXPORTED_TARGETS ${${aruco_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(aruco_EXPORTED_TARGETS ${${aruco_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "")

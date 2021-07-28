@@ -1,2 +1,2 @@
-ackermann_control:ackermann_pub:aruco_ros/aruco:aruco_ros/aruco_msgs:aruco_ros/aruco_ros:localizer
--DCATKIN_DEVEL_PREFIX=/home/marvin/University/ESL/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/marvin/University/ESL/catkin_ws/install -G Unix Makefiles
+ackermann_control:ackermann_pub
+-DCATKIN_DEVEL_PREFIX=/home/marvin/University/ESL/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/marvin/University/ESL/catkin_ws/install -DCATKIN_WHITELIST_PACKAGES=ackermann_control;ackermann_pub -G Unix Makefiles

@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(ackermann_pub_LIBRARIES ${ackermann_pub_LIBRARIES})
 
   _list_append_unique(ackermann_pub_LIBRARY_DIRS ${${ackermann_pub_dep}_LIBRARY_DIRS})
-  list(APPEND ackermann_pub_EXPORTED_TARGETS ${${ackermann_pub_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(ackermann_pub_EXPORTED_TARGETS ${${ackermann_pub_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "")

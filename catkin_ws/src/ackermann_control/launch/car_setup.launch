@@ -1,0 +1,11 @@
+<launch>
+    <include file="$(find realsense2_camera)launch//rs_camera.launch" />
+    <include file="$(find localizer)/launch/localizer.launch" />
+    <node pkg="ackermann_control" type="car_controller.py" name="car_controller">
+    </node>
+    <node pkg="position_controller" type="aruco_tracker.py" name="aruco_tracker">
+    </node>
+    <node pkg="rosserial_python" type="serial_node.py" name="arduino_serial">
+    <param name="port" value="/dev/ttyACM0"/>
+    </node>
+</launch>
