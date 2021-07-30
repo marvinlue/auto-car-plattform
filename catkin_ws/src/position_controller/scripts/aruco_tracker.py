@@ -11,7 +11,8 @@ class Aruco_Tracker():
 
     def __init__(self):
         rospy.init_node('Aruco_Tracker', anonymous=True)
-        self.subPose = rospy.Subscriber('single_localizer/pose', PoseStamped, self.pose_callback)
+        nodeName = rospy.get_param('~nodeName')
+        self.subPose = rospy.Subscriber(nodeName + '/pose', PoseStamped, self.pose_callback)
         self.pubDrive = rospy.Publisher('Desired_Ackermann_Drive', AckermannDriveStamped, queue_size=10)
         self.rate = rospy.Rate(10)
         self.lastPoseMsgTime = rospy.Time.now()
@@ -19,6 +20,7 @@ class Aruco_Tracker():
         self.neutralAckermannStamped = AckermannDriveStamped()
         
         self.stop = 2
+        self.anglefactor = 2
         self.speedlimit = 0.5
 
     def pose_callback(self, pose):
@@ -29,21 +31,22 @@ class Aruco_Tracker():
         rospy.loginfo(diff)
         return (diff < self.stop)
 
+    def steeringAngle(self, angle):
+        return angle * self.anglefactor
+
     def tracking(self):
         time = rospy.Time.now()
         if self.checkPoseMsg(time) :
             x = self.lastPose.pose.position.x
             z = self.lastPose.pose.position.z
             angle = math.degrees(math.atan(x/z))
-            if abs(angle) < 2:
-                angle = 0
-
-            if z < 0.30 :
+            steeringAngle = self.steeringAngle(angle)
+            if (math.sqrt(z**2 + x**2) < 0.50) :
                 speed = 0
             else:
                 speed = self.speedlimit
             msg = AckermannDriveStamped()
-            msg.drive.steering_angle = angle
+            msg.drive.steering_angle = steeringAngle
             msg.drive.speed = speed
             msg.header.stamp = time
             

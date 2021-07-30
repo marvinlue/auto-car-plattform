@@ -142,22 +142,6 @@ tf2/transform_datatypes.h
 visualization_msgs/Marker.h
 -
 
-/home/marvin/University/ESL/catkin_ws/src/aruco_ros/aruco_ros/src/aruco_ros_utils.cpp
-aruco_ros/aruco_ros_utils.h
--
-ros/console.h
--
-ros/assert.h
--
-iostream
--
-tf/transform_datatypes.h
--
-opencv2/calib3d.hpp
--
-cv_bridge/cv_bridge.h
--
-
 /home/marvin/University/ESL/catkin_ws/src/aruco_ros/aruco_ros/src/simple_single.cpp
 iostream
 -

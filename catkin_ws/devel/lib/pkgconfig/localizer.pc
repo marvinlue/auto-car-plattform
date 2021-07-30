@@ -3,6 +3,6 @@ prefix=/home/marvin/University/ESL/catkin_ws/devel
 Name: localizer
 Description: Description of localizer
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/marvin/University/ESL/catkin_ws/src/localizer/include
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: aruco
